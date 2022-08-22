@@ -1,0 +1,442 @@
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/cinnamon/theme/'
+saved-view='/org/'
+window-height=500
+window-is-maximized=false
+window-width=540
+
+[com/linuxmint/install]
+flatpak-remotes=['flathub::https://dl.flathub.org/repo/::False']
+installed-apps=['apt:alacarte', 'apt:checkinstall', 'apt:cmake', 'apt:conky-all', 'apt:deepin-calculator', 'apt:deepin-image-viewer', 'apt:deepin-picker', 'apt:dolphin', 'apt:g++', 'apt:geeqie', 'apt:git', 'apt:grub-customizer', 'apt:gwenview', 'apt:ksysguard', 'apt:mpv', 'apt:nautilus', 'apt:nautilus-hide', 'apt:nvidia-driver-515', 'apt:okular', 'apt:python3-pip', 'apt:qbittorrent', 'apt:qt5-style-kvantum', 'apt:qt5-style-kvantum-themes', 'apt:qttools5-dev-tools', 'apt:soundkonverter', 'apt:stacer', 'apt:thunar', 'apt:vlc', 'fp:flathub:app/com.rafaelmardojai.Blanket/x86_64/stable', 'fp:flathub:app/com.sweethome3d.Sweethome3d/x86_64/stable', 'fp:flathub:app/org.gimp.GIMP/x86_64/stable', 'fp:flathub:app/org.inkscape.Inkscape/x86_64/stable', 'fp:flathub:app/org.telegram.desktop/x86_64/stable', 'fp:flathub:app/org.onlyoffice.desktopeditors/x86_64/stable']
+
+[com/linuxmint/updates]
+autorefresh-hours=2
+default-repo-is-ok=true
+hide-systray=true
+hide-window-after-update=true
+install-last-run=1661089739
+refresh-last-run=1661089882
+refresh-minutes=10
+show-welcome-page=false
+tracker-grace-period=30
+tracker-max-age=15
+tracker-max-days=7
+window-height=570
+window-pane-position=280
+window-width=790
+
+[org/blueberry]
+tray-enabled=false
+
+[org/cinnamon]
+alttab-switcher-delay=100
+alttab-switcher-style='thumbnails'
+command-history=['neofetch', '/home/natalie/Downloads/Compressed/android-studio/bin/studio.sh']
+desklet-snap-interval=25
+enabled-applets=['panel1:center:0:grouped-window-list@cinnamon.org:2', 'panel1:right:6:systray@cinnamon.org:3', 'panel1:left:3:xapp-status@cinnamon.org:4', 'panel1:left:4:notifications@cinnamon.org:5', 'panel1:right:1:printers@cinnamon.org:6', 'panel1:right:11:keyboard@cinnamon.org:8', 'panel1:right:8:network@cinnamon.org:10', 'panel1:right:7:sound@cinnamon.org:11', 'panel1:right:12:power@cinnamon.org:12', 'panel1:right:13:calendar@cinnamon.org:13', 'panel1:left:0:CinnVIIStarkMenu@NikoKrause:14', 'panel1:right:16:clean-show-desktop@filipetorresbr:15', 'panel1:right:4:download-and-upload-speed@cardsurf:16', 'panel1:right:2:betterlock:17', 'panel1:right:10:qredshift@quintao:18', 'panel1:right:15:separator@cinnamon.org:19', 'panel1:right:14:user@cinnamon.org:20', 'panel1:right:5:spacer@cinnamon.org:21', 'panel1:left:2:spacer@cinnamon.org:22', 'panel1:right:3:spacer@cinnamon.org:23', 'panel1:right:9:darkMode@linuxedo.com:24']
+enabled-desklets=@as []
+enabled-extensions=['smart-panel@mohammad-sn']
+favorite-apps=['synaptic.desktop', 'mintinstall.desktop', 'com.rafaelmardojai.Blanket.desktop:flatpak', 'notion-desktop.desktop', 'github-desktop.desktop', 'code.desktop', 'firefox.desktop', 'google-chrome.desktop', 'brave-browser.desktop', 'org.gimp.GIMP.desktop:flatpak', 'org.inkscape.Inkscape.desktop:flatpak', 'org.kde.dolphin.desktop', 'org.gnome.Nautilus.desktop', 'stacer.desktop', 'org.qbittorrent.qBittorrent.desktop', 'xdman.desktop']
+next-applet-id=25
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId": 1, "left": 24, "center": 32, "right": 32}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 20, "center": 28, "right": 25}]'
+panels-height=['1:36']
+
+[org/cinnamon/cinnamon-session]
+quit-time-delay=60
+
+[org/cinnamon/desktop/a11y/keyboard]
+bouncekeys-beep-reject=true
+bouncekeys-delay=300
+bouncekeys-enable=false
+disable-timeout=120
+enable=false
+feature-state-change-beep=false
+mousekeys-accel-time=1200
+mousekeys-enable=false
+mousekeys-init-delay=160
+mousekeys-max-speed=500
+slowkeys-beep-accept=true
+slowkeys-beep-press=true
+slowkeys-beep-reject=false
+slowkeys-delay=300
+slowkeys-enable=false
+stickykeys-enable=false
+stickykeys-modifier-beep=true
+stickykeys-two-key-off=true
+timeout-enable=false
+
+[org/cinnamon/desktop/a11y/mouse]
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-time=1.2
+
+[org/cinnamon/desktop/applications/calculator]
+exec='deepin-calculator'
+
+[org/cinnamon/desktop/applications/terminal]
+exec='gnome-terminal'
+
+[org/cinnamon/desktop/background]
+picture-uri='file:///media/natalie/D-Drive/Multimedia/Wallpaper/Wallpaper/wallheaven-013.jpg'
+
+[org/cinnamon/desktop/interface]
+cursor-blink-time=1200
+cursor-size=24
+cursor-theme='capitaine-cursors-light'
+gtk-theme='Juno-ocean'
+icon-theme='Fluent-dark'
+scaling-factor=uint32 0
+text-scaling-factor=1.1000000000000001
+
+[org/cinnamon/desktop/keybindings]
+custom-list=['custom3', 'custom0', '__dummy__', 'custom1', 'custom2']
+looking-glass-keybinding=@as []
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom0]
+binding=['<Primary><Shift>Escape']
+command='ksysguard'
+name='ksysguard'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom1]
+binding=['<Super>k']
+command='deepin-picker'
+name='color picker'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom2]
+binding=['<Super>Print']
+command='gnome-screenshot --interactive'
+name='Screenshot'
+
+[org/cinnamon/desktop/keybindings/custom-keybindings/custom3]
+binding=['<Super>f']
+command='fsearch'
+name='fsearch'
+
+[org/cinnamon/desktop/keybindings/media-keys]
+screensaver=['<Control><Alt>l', 'XF86ScreenSaver', '<Super>l']
+
+[org/cinnamon/desktop/keybindings/wm]
+close=['<Alt>F4', '<Primary><Shift>x']
+minimize=['<Super>m']
+move-to-workspace-left=['<Primary><Super>Left']
+move-to-workspace-right=['<Primary><Super>Right']
+push-snap-left=@as []
+push-snap-right=@as []
+switch-to-workspace-left=['<Primary><Shift>Left']
+switch-to-workspace-right=['<Primary><Shift>Right']
+
+[org/cinnamon/desktop/media-handling]
+automount-open=false
+autorun-never=true
+
+[org/cinnamon/desktop/notifications]
+remove-old=true
+
+[org/cinnamon/desktop/privacy]
+remember-recent-files=true
+
+[org/cinnamon/desktop/sound]
+event-sounds=false
+volume-sound-file='/usr/share/mint-artwork/sounds/volume.ogg'
+
+[org/cinnamon/desktop/wm/preferences]
+action-middle-click-titlebar='minimize'
+action-scroll-titlebar='shade'
+min-window-opacity=30
+mouse-button-modifier='<Super>'
+num-workspaces=2
+theme='Juno-ocean'
+titlebar-font='Ubuntu Medium 11'
+workspace-names=@as []
+
+[org/cinnamon/launcher]
+check-frequency=300
+memory-limit=2048
+
+[org/cinnamon/muffin]
+resize-threshold=24
+tile-hud-threshold=25
+
+[org/cinnamon/settings-daemon/peripherals/keyboard]
+delay=uint32 500
+numlock-state='on'
+repeat-interval=uint32 30
+
+[org/cinnamon/settings-daemon/peripherals/mouse]
+double-click=400
+drag-threshold=8
+motion-threshold=1
+
+[org/cinnamon/settings-daemon/peripherals/touchpad]
+motion-threshold=1
+
+[org/cinnamon/sounds]
+login-enabled=false
+logout-enabled=false
+notification-enabled=true
+notification-file='/usr/share/mint-artwork/sounds/notification.oga'
+plug-file='/usr/share/mint-artwork/sounds/usb connected.ogg'
+switch-file='/usr/share/mint-artwork/sounds/workspace switch.ogg'
+tile-file='/usr/share/mint-artwork/sounds/tile.oga'
+unplug-file='/usr/share/mint-artwork/sounds/usb disconnected.ogg'
+
+[org/cinnamon/theme]
+name='Adara-Dark'
+
+[org/gnome/boxes]
+first-run=false
+view='icon-view'
+window-maximized=false
+window-position=[278, 123]
+window-size=[1115, 820]
+
+[org/gnome/charmap]
+last-char=uint32 223
+
+[org/gnome/charmap/window-state]
+size=(1080, 587)
+
+[org/gnome/desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[org/gnome/desktop/a11y/mouse]
+dwell-click-enabled=false
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-enabled=false
+secondary-click-time=1.2
+
+[org/gnome/desktop/interface]
+monospace-font-name='Monospace 11'
+toolkit-accessibility=false
+
+[org/gnome/desktop/privacy]
+disable-microphone=false
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/file-roller/dialogs/new]
+default-extension='.tar.xz'
+encrypt-header=false
+volume-size=0
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+show-path=false
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 620)
+maximized=false
+
+[org/gnome/nm-applet]
+disable-connected-notifications=true
+disable-disconnected-notifications=true
+suppress-wireless-networks-available=true
+
+[org/gnome/nm-applet/eap/006a8866-5a71-4863-983a-ee4fc614ef76]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/f4fb0c6e-55cf-4d67-9e4a-65b7205d1150]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/terminal/legacy]
+default-show-menubar=false
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,0,0)'
+background-transparency-percent=11
+cursor-shape='ibeam'
+default-size-columns=85
+default-size-rows=24
+font='Monospace 11'
+foreground-color='rgb(95,204,255)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(12,236,221)', 'rgb(12,236,221)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(162,57,234)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='natalie'
+
+[org/gnome/terminal/legacy/profiles:/legacy]
+default-show-menubar=false
+
+[org/gnome/terminal/legacy/profiles:/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,0,0)'
+background-transparency-percent=10
+cursor-shape='ibeam'
+default-size-columns=85
+font='Monospace 11'
+foreground-color='rgb(127,229,255)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(251,255,41)', 'rgb(143,255,111)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(194,69,255)', 'rgb(252,233,79)', 'rgb(255,255,255)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+scrollbar-policy='never'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='natalie'
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=179
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+window-position=(412, 74)
+window-size=(1096, 822)
+
+[org/nemo/desktop]
+computer-icon-visible=false
+font='Ubuntu 11'
+home-icon-visible=true
+trash-icon-visible=true
+volumes-visible=false
+
+[org/nemo/icon-view]
+captions=['none', 'size', 'none']
+
+[org/nemo/plugins]
+disabled-extensions=['NemoShare']
+
+[org/nemo/preferences]
+bulk-rename-tool=b'thunar --bulk-rename'
+executable-text-activation='display'
+quick-renames-with-pause-in-between=true
+show-hidden-files=false
+show-home-icon-toolbar=true
+show-location-entry=false
+show-new-folder-icon-toolbar=true
+show-open-in-terminal-toolbar=true
+show-reload-icon-toolbar=true
+show-show-thumbnails-toolbar=true
+show-up-icon-toolbar=false
+
+[org/nemo/preferences/menu-config]
+background-menu-scripts=false
+selection-menu-favorite=false
+selection-menu-open-in-new-window=false
+selection-menu-scripts=false
+
+[org/nemo/window-state]
+devices-expanded=false
+geometry='800x550+372+209'
+maximized=false
+network-expanded=false
+sidebar-bookmark-breakpoint=7
+sidebar-width=180
+start-with-menu-bar=false
+start-with-sidebar=true
+
+[org/virt-manager/virt-manager]
+manager-window-height=550
+manager-window-width=550
+
+[org/virt-manager/virt-manager/connections]
+autoconnect=['lxc:///']
+uris=['lxc:///']
+
+[org/virt-manager/virt-manager/new-vm]
+graphics-type='system'
+
+[org/virt-manager/virt-manager/vmlist-fields]
+disk-usage=false
+network-traffic=false
+
+[org/x/editor/plugins]
+active-plugins=['modelines', 'bracketcompletion', 'textsize', 'spell', 'filebrowser', 'time', 'joinlines', 'sort', 'wordcompletion', 'docinfo', 'open-uri-context-menu']
+
+[org/x/editor/plugins/filebrowser/on-load]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/natalie/Data/tmp'
+
+[org/x/editor/preferences/editor]
+auto-save=true
+auto-save-interval=uint32 2
+bracket-matching=false
+create-backup-copy=false
+display-line-numbers=true
+display-right-margin=false
+draw-whitespace=false
+highlight-current-line=true
+prefer-dark-theme=true
+scheme='cobalt'
+
+[org/x/editor/preferences/ui]
+menubar-visible=false
+minimap-visible=false
+statusbar-visible=false
+
+[org/x/editor/state/history-entry]
+history-replace-with=['Mac OS', '💠-->', '  💠-->', '🔰⚫  14 Aug 2022', '🔰⚪  14 Aug 2022']
+history-search-for=['Mac OS', 'VM Name', ' -->']
+
+[org/x/editor/state/window]
+bottom-panel-size=140
+side-panel-active-page=827629879
+side-panel-size=200
+size=(960, 1014)
+state=76672
+
+[org/x/pix/browser]
+filterbar-visible=true
+maximized=true
+properties-visible=true
+show-thumbnails=true
+sort-inverse=false
+sort-type='file::mtime'
+startup-current-file='file://~/Pictures/walllpaper/MPL%20Studios%20%20Cara_Mell-05.jpg'
+startup-location='file://~/Pictures/walllpaper'
+thumbnail-list-size=132
+thumbnail-list-visible=false
+viewer-sidebar='tools'
+viewer-sidebar-width=294
+
+[org/x/pix/crop]
+aspect-ratio='16x9'
+aspect-ratio-height=9
+aspect-ratio-invert=false
+aspect-ratio-width=16
+bind-dimensions=false
+bind-factor=8
+grid-type='thirds'
+
+[org/x/pix/data-migration]
+catalogs-2-10=true
+
+[org/x/pix/dialogs/save-file]
+show-options=true
+
+[org/x/pix/general]
+active-extensions=['23hq', 'bookmarks', 'burn_disc', 'catalogs', 'change_date', 'comments', 'contact_sheet', 'convert_format', 'desktop_background', 'edit_metadata', 'exiv2_tools', 'facebook', 'file_manager', 'file_tools', 'find_duplicates', 'flicker', 'gstreamer_tools', 'gstreamer_utils', 'image_print', 'image_rotation', 'image_viewer', 'importer', 'jpeg_utils', 'list_tools', 'oauth', 'photo_importer', 'photobucket', 'picasaweb', 'raw_files', 'red_eye_removal', 'rename_series', 'resize_images', 'search', 'selections', 'slideshow', 'webalbums']
+
+[org/x/pix/pixbuf-savers/png]
+compression-level=6
+
+[org/x/sticky]
+active-group='notes'
+automatic-backups=true
+autostart=true
+backup-interval=uint32 3
+default-height=uint32 200
+default-width=uint32 250
+desktop-window-state=true
+first-run=false
+latest-backup=uint32 1661085582
+old-backups-max=uint32 7
