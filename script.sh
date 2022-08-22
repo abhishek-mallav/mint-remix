@@ -31,8 +31,8 @@ sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-daily -y
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer -y
 sudo add-apt-repository ppa:papirus/papirus -y
 
-sudo apt install apt-transport-https curl -y
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg -y
+sudo apt install apt-transport-https curl
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
 echo "Updating Packages"
@@ -65,6 +65,70 @@ sudo apt install python3-pip -y
 sudo apt install qt5-style-kvantum qt5-style-kvantum-themes -y 
 sudo apt install brave-browser -y
 
+read -p "Do You Want To Install Google Chrome (yes or no) : " input001
+if [ $input001 = yes ] || [ $input001 = y ]
+then
+    echo "Downloading Google-Chrome"
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    echo "Installing Google-Chrome"
+    sudo dpkg -i google-chrome-stable_current_amd64.deb
+else
+    echo "OK"
+fi
+
+read -p "Do You Want To Install VS Code (yes or no) : " input002
+if [ $input002 = yes ] || [ $input002 = y ]
+then
+    echo "Downloading VS Code"
+    sudo apt-get install wget gpg
+    wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+    sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+    sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+    rm -f packages.microsoft.gpg
+    sudo apt install apt-transport-https
+    sudo apt update
+    echo "Installing VS Code"
+    sudo apt install code -y
+else
+    echo "OK"
+fi
+
+read -p "Do You Want To Install Github Desktop (yes or no) : " input003
+if [ $input003 = yes ] || [ $input003 = y ]
+then
+    echo "Downloading Github Desktop"
+    wget https://download1650.mediafire.com/fqab0zcc31yg/uxotxiy9nswxm3j/GitHubDesktop-linux-2.6.3.deb
+    echo "Installing Github Desktop"
+    sudo dpkg -i GitHubDesktop-linux-2.6.3.deb
+else
+    echo "OK"
+fi
+
+read -p "Do You Want To Install Notion Desktop (yes or no) : " input004
+if [ $input004 = yes ] || [ $input004 = y ]
+then
+    echo "Downloading Notion Desktop"
+    wget https://github.com/valerie-makes/notion-linux/releases/download/v2.0.6-windows/notion-desktop_2.0.6_amd64.deb
+    echo "Installing Github Desktop"
+    sudo dpkg -i notion-desktop_2.0.6_amd64.deb
+else
+    echo "OK"
+fi
+
+read -p "Do You Want To Install MEGA Sync (yes or no) : " input005
+if [ $input005 = yes ] || [ $input005 = y ]
+then
+    echo "Downloading MEGA Sync"
+    wget https://download1076.mediafire.com/ts68paj4jsig/trwal3vwgy0x8z8/megasync-xUbuntu_20.04_amd64.deb
+    echo "Installing MEGA Sync"
+    sudo dpkg -i megasync-xUbuntu_20.04_amd64.deb
+else
+    echo "OK"
+fi
+
+sudo apt install -f
+rm -r $HOME *.deb
+rm -r $HOME/Downloads *.deb
 echo "Upgrading Packages"
 sudo apt upgrade -y
 
