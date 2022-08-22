@@ -102,7 +102,9 @@ fi
 read -p "Do You Want To Apply All Settings (yes or no) : " input02
 if [ $input02 = yes ] || [ $input02 = y ]; then
     echo "Applying Settings"
-    dconf load / < files/dconf.txt
+    cd files/
+    dconf load / < dconf.txt
+    cd ..
 else
     read -p "Do You Want To Enable All Applets (yes or no) : " input03
     if [ $input03 = yes ] || [ $input03 = y ]; then
@@ -140,7 +142,7 @@ tar -xf files/fonts.tar.xz -C $HOME/.fonts
 mkdir $HOME/Pictures/wallpaper
 cp files/wallheaven-007.jpg $HOME/Pictures/wallpaper
 echo "Applying Wallpaper"
-gsettings set org.gnome.desktop.background picture-uri file:///$HOME/Pictures/wallpaper/wallheaven-007.jpg
+gsettings set org.gnome.desktop.background picture-uri file://$HOME/Pictures/wallpaper/wallheaven-007.jpg
 
 echo "Applying Login Wallpaper"
 sudo cp files/wallheaven-000.jpeg /usr/share/backgrounds
