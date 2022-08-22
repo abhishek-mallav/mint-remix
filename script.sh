@@ -25,6 +25,8 @@ tar -xf files/extensions.tar.xz -C $HOME/.local/share/cinnamon/extensions
 echo "extracting APPLETS EXTENSION Configs" 
 tar -xf files/cinnamon-configs.tar.xz -C $HOME/.cinnamon/configs
 
+sudo apt install apt-transport-https -y
+
 echo "Adding Repositories"
 sudo add-apt-repository ppa:nemonein/bomi -y
 sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-daily -y
@@ -85,7 +87,6 @@ then
     sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
     sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
     rm -f packages.microsoft.gpg
-    sudo apt install apt-transport-https
     sudo apt update
     echo "Installing VS Code"
     sudo apt install code -y
@@ -126,9 +127,8 @@ else
     echo "OK"
 fi
 
-sudo apt install -f
-rm -r $HOME *.deb
-rm -r $HOME/Downloads *.deb
+sudo apt install -f -y
+rm *.deb
 echo "Upgrading Packages"
 sudo apt upgrade -y
 
