@@ -2,31 +2,38 @@
 
 echo "plz enter your sudo password"
 sudo tar -xf files/flat-remix-icon-pack.tar.xz -C /usr/share/icons
+sleep 2
 echo "ectracting ICONS"
 sudo tar -xf files/fluent-icon-pack.tar.xz -C /usr/share/icons
 
 echo "extracting CURSORS"
 sudo tar -xf files/cursor-theme.tar.gz -C /usr/share/icons
+sleep 2
 
 echo "extracting THEMES"
 sudo tar -xf files/fluent-gtk-theme.tar.xz -C /usr/share/themes
 sudo tar -xf files/juno-ocean-gtk-theme.tar.xz -C /usr/share/themes
 sudo tar -xf files/adara-dark.tar.xz -C /usr/share/themes
+sleep 2
 
 echo "extracting SOUNDS"
 sudo tar -xf files/sounds.tar.xz -C /usr/share/mint-artwork/sounds
+sleep 2
 
 echo "extracting APPLETS"
 tar -xf files/applets.tar.xz -C $HOME/.local/share/cinnamon/applets
+sleep 2
 
 echo "extracting EXTENSIONS"
 tar -xf files/extensions.tar.xz -C $HOME/.local/share/cinnamon/extensions
+sleep 2
 
 echo "extracting APPLETS EXTENSION Configs" 
 tar -xf files/cinnamon-configs.tar.xz -C $HOME/.cinnamon/configs
+sleep 2
 
-sudo apt install apt-transport-https -y
-
+sudo apt install apt-transport-https curl -y
+sleep 2
 echo "Adding Repositories"
 sudo add-apt-repository ppa:nemonein/bomi -y
 sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-daily -y
@@ -36,14 +43,18 @@ sudo add-apt-repository ppa:papirus/papirus -y
 sudo apt install apt-transport-https curl
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sleep 2
 
 echo "Updating Packages"
+sleep 2
 sudo apt update
 
 echo "Removing Unwanted Packages"
+sleep 2
 sudo apt remove simple-scan xreader-dbg bulky hexchat hypnotix rhythmbox transmission-gtk thunderbird redshift-gtk warpinator xreader xviewer -y
 
 echo "Installing Extra Packages"
+sleep 2
 sudo apt install grub-customizer -y 
 sudo apt install conky-all -y 
 sudo apt install deepin-picker -y 
@@ -71,17 +82,21 @@ read -p "Do You Want To Install Google Chrome (yes or no) : " input001
 if [ $input001 = yes ] || [ $input001 = y ]
 then
     echo "Downloading Google-Chrome"
+    sleep 2
     wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
     echo "Installing Google-Chrome"
+    sleep 2
     sudo dpkg -i google-chrome-stable_current_amd64.deb
 else
     echo "OK"
+    sleep 2
 fi
 
 read -p "Do You Want To Install VS Code (yes or no) : " input002
 if [ $input002 = yes ] || [ $input002 = y ]
 then
     echo "Downloading VS Code"
+    sleep 2
     sudo apt-get install wget gpg
     wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
     sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
@@ -89,64 +104,81 @@ then
     rm -f packages.microsoft.gpg
     sudo apt update
     echo "Installing VS Code"
+    sleep 2
     sudo apt install code -y
 else
     echo "OK"
+    sleep 2
 fi
 
 read -p "Do You Want To Install Github Desktop (yes or no) : " input003
 if [ $input003 = yes ] || [ $input003 = y ]
 then
     echo "Downloading Github Desktop"
+    sleep 2
     wget https://download1650.mediafire.com/fqab0zcc31yg/uxotxiy9nswxm3j/GitHubDesktop-linux-2.6.3.deb
     echo "Installing Github Desktop"
+    sleep 2
     sudo dpkg -i GitHubDesktop-linux-2.6.3.deb
 else
     echo "OK"
+    sleep 2
 fi
 
 read -p "Do You Want To Install Notion Desktop (yes or no) : " input004
 if [ $input004 = yes ] || [ $input004 = y ]
 then
     echo "Downloading Notion Desktop"
+    sleep 2
     wget https://github.com/valerie-makes/notion-linux/releases/download/v2.0.6-windows/notion-desktop_2.0.6_amd64.deb
     echo "Installing Github Desktop"
+    sleep 2
     sudo dpkg -i notion-desktop_2.0.6_amd64.deb
 else
     echo "OK"
+    sleep 2
 fi
 
 read -p "Do You Want To Install MEGA Sync (yes or no) : " input005
 if [ $input005 = yes ] || [ $input005 = y ]
 then
     echo "Downloading MEGA Sync"
+    sleep 2
     wget https://download1076.mediafire.com/ts68paj4jsig/trwal3vwgy0x8z8/megasync-xUbuntu_20.04_amd64.deb
     echo "Installing MEGA Sync"
+    sleep 2
     sudo dpkg -i megasync-xUbuntu_20.04_amd64.deb
 else
     echo "OK"
+    sleep 2
 fi
 
 sudo apt install -f -y
 rm *.deb
 echo "Upgrading Packages"
+sleep 2
 sudo apt upgrade -y
 
 echo "Removing Extra Unwanted Packages"
+sleep 2
 sudo apt remove timeshift gnome-calculator imagemagick imagemagick-6-common timidity -y
 
 sudo apt autoremove -y
 
 echo "extracting App Configs"
+sleep 2
 tar -xf files/app-config.tar.xz -C $HOME/.config
 
 echo "extracting Local App Configs"
+sleep 2
 tar -xf files/local-config.tar.xz -C $HOME/.local/share
 
 echo "cloning bashrc"
+sleep 2
 cp files/.bashrc $HOME
 
 echo "cloning bash aliases"
+sleep 2
 cp files/.bash_aliases $HOME
 
 
@@ -154,18 +186,21 @@ read -p "Do You Want To Remove Default Themes (yes or no) : " input01
 if [ $input01 = yes ] || [ $input01 = y ]
 then
     echo "Removing Default Themes"
+    sleep 2
     sudo rm -r /usr/share/themes/Mint-X-*
     sudo rm -r /usr/share/themes/Mint-Y-*
     sudo rm -r /usr/share/icons/Mint-X-*
     sudo rm -r /usr/share/icons/Mint-Y-*
 else
     echo "OK"
+    sleep 2
 fi
 
 
 read -p "Do You Want To Apply All Settings (yes or no) : " input02
 if [ $input02 = yes ] || [ $input02 = y ]; then
     echo "Applying Settings"
+    sleep 2
     cd files/
     dconf load / < dconf.txt
     cd ..
@@ -173,23 +208,27 @@ else
     read -p "Do You Want To Enable All Applets (yes or no) : " input03
     if [ $input03 = yes ] || [ $input03 = y ]; then
         echo "Enabling Applets"
+        sleep 2
         gsettings set org.cinnamon enabled-applets ['panel1:center:0:grouped-window-list@cinnamon.org:2', 'panel1:right:6:systray@cinnamon.org:3', 'panel1:left:3:xapp-status@cinnamon.org:4', 'panel1:left:4:notifications@cinnamon.org:5', 'panel1:right:1:printers@cinnamon.org:6', 'panel1:right:11:keyboard@cinnamon.org:8', 'panel1:right:8:network@cinnamon.org:10', 'panel1:right:7:sound@cinnamon.org:11', 'panel1:right:12:power@cinnamon.org:12', 'panel1:right:13:calendar@cinnamon.org:13', 'panel1:left:0:CinnVIIStarkMenu@NikoKrause:14', 'panel1:right:16:clean-show-desktop@filipetorresbr:15', 'panel1:right:4:download-and-upload-speed@cardsurf:16', 'panel1:right:2:betterlock:17', 'panel1:right:10:qredshift@quintao:18', 'panel1:right:15:separator@cinnamon.org:19', 'panel1:right:14:user@cinnamon.org:20', 'panel1:right:5:spacer@cinnamon.org:21', 'panel1:left:2:spacer@cinnamon.org:22', 'panel1:right:3:spacer@cinnamon.org:23', 'panel1:right:9:darkMode@linuxedo.com:24']
     else 
         read -p "Do You Want To Apply ICON Theme (yes or no) : " input04
         if [ $input04 = yes ] || [ $input04 = y ]; then
             echo "Applying ICON Themes"
+            sleep 2
             gsettings set org.cinnamon.desktop.interface icon-theme 'Fluent-dark'
         fi
 
         read -p "Do You Want To Apply CURSOR Theme (yes or no) : " input05
         if [ $input05 = yes ] || [ $input05 = y ]; then
             echo "Applying CURSOR Themes"
+            sleep 2
             gsettings set org.cinnamon.desktop.interface cursor-theme 'capitaine-cursors-light'
         fi
 
         read -p "Do You Want To Apply Application Theme (yes or no) : " input06
         if [ $input06 = yes ] || [ $input06 = y ]; then
             echo "Applying Themes"
+            sleep 2
             gsettings set org.cinnamon.desktop.wm.preferences theme 'Juno-ocean'
             gsettings set org.cinnamon.desktop.interface gtk-theme 'Juno-ocean'
             gsettings set org.cinnamon.theme name 'Adara-Dark'
@@ -201,24 +240,29 @@ mkdir $HOME/Data
 
 mkdir $HOME/.fonts
 echo "extracting FONTS"
+sleep 2
 tar -xf files/fonts.tar.xz -C $HOME/.fonts
 
 mkdir $HOME/Pictures/wallpaper
 cp files/wallheaven-007.jpg $HOME/Pictures/wallpaper
 echo "Applying Wallpaper"
+sleep 2
 gsettings set org.gnome.desktop.background picture-uri file://$HOME/Pictures/wallpaper/wallheaven-007.jpg
 
 echo "Applying Login Wallpaper"
+sleep 2
 sudo cp files/wallheaven-000.jpeg /usr/share/backgrounds
 sudo cp files/slick-greeter.conf /etc/lightdm/
 
 read -p "Do You Want To Reboot Your System (yes or no) : " input07
 if [ $input07 = yes ] || [ $input07 = y ]
 then
-    echo "Rebooting "
+    echo "Rebooting in 10 Sec"
+    sleep 10
     reboot
 else
     echo "Reboot Later To Finish Setup"
+    sleep 2
 fi
 
 
