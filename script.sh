@@ -60,7 +60,7 @@ sudo apt install conky-all -y
 sudo apt install deepin-picker -y 
 sudo apt install alacarte -y 
 sudo apt install stacer -y 
-sudo apt install ksysguard -y 
+sudo apt install deepin-system-monitor -y 
 sudo apt install qbittorrent -y
 sudo apt install deepin-image-viewer -y 
 sudo apt install deepin-calculator -y 
@@ -280,17 +280,3 @@ else
     echo "Reboot Later To Finish Setup"
     sleep 2
 fi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
