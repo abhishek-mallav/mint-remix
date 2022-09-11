@@ -251,11 +251,27 @@ gsettings set org.gnome.desktop.background picture-uri file://$HOME/Pictures/wal
 
 echo "Applying Login Wallpaper"
 sleep 2
+
+read -p "Do You Want To Apply GRUB Theme (yes or no) : " input07
+if [ $input07 = yes ] || [ $input07 = y ]
+then
+    echo "Applying GRUB Theme"
+    sleep 10
+    cd files/GRUB/
+    chmod +x install.sh
+    sudo ./install.sh
+    cd ..
+    cd ..
+else
+    echo "OK"
+    sleep 2
+fi
+
 sudo cp files/wallheaven-000.jpeg /usr/share/backgrounds
 sudo cp files/slick-greeter.conf /etc/lightdm/
 
-read -p "Do You Want To Reboot Your System (yes or no) : " input07
-if [ $input07 = yes ] || [ $input07 = y ]
+read -p "Do You Want To Reboot Your System (yes or no) : " input08
+if [ $input08 = yes ] || [ $input08 = y ]
 then
     echo "Rebooting in 10 Sec"
     sleep 10
