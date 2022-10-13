@@ -32,7 +32,6 @@ tray-enabled=false
 alttab-switcher-delay=100
 alttab-switcher-style='thumbnails'
 applet-cache-updated=1661147935
-command-history=['neofetch', '/home/natalie/Downloads/Compressed/android-studio/bin/studio.sh']
 desklet-cache-updated=1661147934
 desklet-snap-interval=25
 device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=KillerFrost']
@@ -82,9 +81,6 @@ exec='deepin-calculator'
 [org/cinnamon/desktop/applications/terminal]
 exec='gnome-terminal'
 
-[org/cinnamon/desktop/background]
-picture-uri='file:///home/natalie/Pictures/wallpaper/wallheaven-007.jpg'
-
 [org/cinnamon/desktop/interface]
 clock-show-date=false
 cursor-blink-time=1200
@@ -101,7 +97,7 @@ looking-glass-keybinding=@as []
 
 [org/cinnamon/desktop/keybindings/custom-keybindings/custom0]
 binding=['<Primary><Shift>Escape']
-command='deepin-system-monitor'
+command='gnome-system-monitor'
 name='System Monitor'
 
 [org/cinnamon/desktop/keybindings/custom-keybindings/custom1]

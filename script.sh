@@ -60,7 +60,6 @@ sudo apt install conky-all -y
 sudo apt install deepin-picker -y 
 sudo apt install alacarte -y 
 sudo apt install stacer -y 
-sudo apt install deepin-system-monitor -y 
 sudo apt install qbittorrent -y
 sudo apt install deepin-image-viewer -y 
 sudo apt install deepin-calculator -y 
@@ -78,90 +77,30 @@ sudo apt install python3-pip -y
 sudo apt install qt5-style-kvantum qt5-style-kvantum-themes -y 
 sudo apt install brave-browser -y
 
-read -p "Do You Want To Install Google Chrome (yes or no) : " input001
+read -p "Do You Want to Install VSCode (yes or no) : " input001
 if [ $input001 = yes ] || [ $input001 = y ]
 then
-    echo "Downloading Google-Chrome"
-    sleep 2
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    echo "Installing Google-Chrome"
-    sleep 2
-    sudo dpkg -i google-chrome-stable_current_amd64.deb
-else
-    echo "OK"
-    sleep 2
-fi
-
-read -p "Do You Want To Install VS Code (yes or no) : " input002
-if [ $input002 = yes ] || [ $input002 = y ]
-then
-    echo "Downloading VS Code"
-    sleep 2
     sudo apt-get install wget gpg
     wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
     sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
     sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
     rm -f packages.microsoft.gpg
+    sudo apt install apt-transport-https
     sudo apt update
-    echo "Installing VS Code"
-    sleep 2
-    sudo apt install code -y
-else
-    echo "OK"
-    sleep 2
-fi
-
-read -p "Do You Want To Install Github Desktop (yes or no) : " input003
-if [ $input003 = yes ] || [ $input003 = y ]
-then
-    echo "Downloading Github Desktop"
-    sleep 2
-    wget https://download1650.mediafire.com/fqab0zcc31yg/uxotxiy9nswxm3j/GitHubDesktop-linux-2.6.3.deb
-    echo "Installing Github Desktop"
-    sleep 2
-    sudo dpkg -i GitHubDesktop-linux-2.6.3.deb
-else
-    echo "OK"
-    sleep 2
-fi
-
-read -p "Do You Want To Install Notion Desktop (yes or no) : " input004
-if [ $input004 = yes ] || [ $input004 = y ]
-then
-    echo "Downloading Notion Desktop"
-    sleep 2
-    wget https://github.com/valerie-makes/notion-linux/releases/download/v2.0.6-windows/notion-desktop_2.0.6_amd64.deb
-    echo "Installing Github Desktop"
-    sleep 2
-    sudo dpkg -i notion-desktop_2.0.6_amd64.deb
-else
-    echo "OK"
-    sleep 2
-fi
-
-read -p "Do You Want To Install MEGA Sync (yes or no) : " input005
-if [ $input005 = yes ] || [ $input005 = y ]
-then
-    echo "Downloading MEGA Sync"
-    sleep 2
-    wget https://download1076.mediafire.com/ts68paj4jsig/trwal3vwgy0x8z8/megasync-xUbuntu_20.04_amd64.deb
-    echo "Installing MEGA Sync"
-    sleep 2
-    sudo dpkg -i megasync-xUbuntu_20.04_amd64.deb
+    sudo apt install code
 else
     echo "OK"
     sleep 2
 fi
 
 sudo apt install -f -y
-rm *.deb
 echo "Upgrading Packages"
 sleep 2
 sudo apt upgrade -y
 
 echo "Removing Extra Unwanted Packages"
 sleep 2
-sudo apt remove timeshift gnome-calculator imagemagick imagemagick-6-common timidity -y
+sudo apt remove gnome-calculator timidity -y
 
 sudo apt autoremove -y
 
@@ -244,13 +183,16 @@ sleep 2
 tar -xf files/fonts.tar.xz -C $HOME/.fonts
 
 mkdir $HOME/Pictures/wallpaper
-cp files/wallheaven-007.jpg $HOME/Pictures/wallpaper
+cp files/wallpaper.jpg $HOME/Pictures/wallpaper
 echo "Applying Wallpaper"
 sleep 2
-gsettings set org.gnome.desktop.background picture-uri file://$HOME/Pictures/wallpaper/wallheaven-007.jpg
+gsettings set org.gnome.desktop.background picture-uri file://$HOME/Pictures/wallpaper/wallpaper.jpg
 
 echo "Applying Login Wallpaper"
 sleep 2
+
+sudo cp files/wallheaven-000.jpeg /usr/share/backgrounds
+sudo cp files/slick-greeter.conf /etc/lightdm/
 
 read -p "Do You Want To Apply GRUB Theme (yes or no) : " input07
 if [ $input07 = yes ] || [ $input07 = y ]
@@ -266,9 +208,6 @@ else
     echo "OK"
     sleep 2
 fi
-
-sudo cp files/wallheaven-000.jpeg /usr/share/backgrounds
-sudo cp files/slick-greeter.conf /etc/lightdm/
 
 read -p "Do You Want To Reboot Your System (yes or no) : " input08
 if [ $input08 = yes ] || [ $input08 = y ]
