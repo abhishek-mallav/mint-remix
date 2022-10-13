@@ -46,9 +46,9 @@ Mint Remix is a themed version of Linux Mint
 
 - Just Like Windows a Show Desktop Applet has been added with hover to peek feature
 
-![](/home/natalie/.config/marktext/images/00da03c590c0a1651c74f7b9027ba5b9125ceddd.png)
+![mintremix-03](https://user-images.githubusercontent.com/76923011/195605302-25ada6ad-4764-4f6b-a53a-45ac05e16b92.png)
 
-![](/home/natalie/.config/marktext/images/455416bb0dd4ee0373345ec2b8c531a38012485d.png)
+![mintremix-04](https://user-images.githubusercontent.com/76923011/195605388-fedeb6d0-5667-4910-90c9-9edc2e4380a5.png)
 
 ### Other Configs
 
@@ -208,16 +208,26 @@ Mint Remix is a themed version of Linux Mint
 
 ### How to install
 
-- open the terminal and got the directory where the file *script.sh* is present *(right click in the directory/folder and click open in terminal)*
+- open the terminal *(you need to have git installed if not install it with)*
 
-```
-sudo ./script.sh
+```bash
+sudo apt install git
 ```
 
-* if any error occurs make the script executable by **right click** --> **properties** --> **permissions** --> **checking the checkbox to execute** or paste the below command and then run the first command
-
+```bash
+git clone https://github.com/abhishek-mallav/mint-remix.git
 ```
+
+```bash
+cd $HOME/mint-remix
+```
+
+```bash
 chmod +x script.sh
+```
+
+```bash
+sudo ./script.sh
 ```
 
 ### Conky is installed but not configured
@@ -226,7 +236,7 @@ chmod +x script.sh
 
 ###### [GitHub - abhishek-mallav/conky-remix: conky theme for linux](https://github.com/abhishek-mallav/conky-remix)
 
-![](/home/natalie/.config/marktext/images/dccfb330c093b47f5c6a2a61f1b9d98c2c12e684.png)
+![Screenshot from 2022-10-13 17-49-59](https://user-images.githubusercontent.com/76923011/195605468-3ce94010-83f7-4ce0-a339-18b98d786474.png)
 
 Terminal, Icons, Panel (taskbar) are scaled for less eye strain
 
