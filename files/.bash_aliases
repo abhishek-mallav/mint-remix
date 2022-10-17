@@ -6,8 +6,9 @@ alias update="sudo apt update"
 alias upgrade="sudo apt upgrade"
 alias install="sudo apt install"
 alias search="sudo apt search"
+alias purge="sudo apt purge"
 alias remove="sudo apt remove"
 alias autoremove="sudo apt autoremove"
 alias autoclean="sudo apt autoclean"
-alias wget='wget --directory-prefix=/home/natalie/Data'
+alias wget='wget --directory-prefix=$HOME/Data'
 alias uad="'/home/natalie/Data/Apps/universal_android_debloater'"

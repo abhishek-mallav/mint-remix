@@ -14,8 +14,8 @@ autorefresh-hours=2
 default-repo-is-ok=true
 hide-systray=true
 hide-window-after-update=true
-install-last-run=1662644894
-refresh-last-run=1662897732
+install-last-run=1665470851
+refresh-last-run=1665838840
 refresh-minutes=10
 show-welcome-page=false
 tracker-grace-period=30
@@ -32,6 +32,7 @@ tray-enabled=false
 alttab-switcher-delay=100
 alttab-switcher-style='thumbnails'
 applet-cache-updated=1661147935
+command-history=['neofetch', '/home/natalie/Downloads/Compressed/android-studio/bin/studio.sh', 'uad', 'r']
 desklet-cache-updated=1661147934
 desklet-snap-interval=25
 device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=KillerFrost']
@@ -39,15 +40,18 @@ enabled-applets=['panel1:center:0:grouped-window-list@cinnamon.org:2', 'panel1:r
 enabled-desklets=@as []
 enabled-extensions=['smart-panel@mohammad-sn']
 extension-cache-updated=1661147934
-favorite-apps=['synaptic.desktop', 'mintinstall.desktop', 'com.rafaelmardojai.Blanket.desktop:flatpak', 'notion-desktop.desktop', 'github-desktop.desktop', 'code.desktop', 'firefox.desktop', 'google-chrome.desktop', 'brave-browser.desktop', 'org.gimp.GIMP.desktop:flatpak', 'org.inkscape.Inkscape.desktop:flatpak', 'org.kde.dolphin.desktop', 'org.gnome.Nautilus.desktop', 'stacer.desktop', 'org.qbittorrent.qBittorrent.desktop', 'xdman.desktop']
+favorite-apps=['synaptic.desktop', 'mintinstall.desktop', 'com.rafaelmardojai.Blanket.desktop:flatpak', 'notion-desktop.desktop', 'trilium.desktop', 'github-desktop.desktop', 'code.desktop', 'firefox.desktop', 'google-chrome.desktop', 'brave-browser.desktop', 'org.gimp.GIMP.desktop:flatpak', 'org.inkscape.Inkscape.desktop:flatpak', 'stacer.desktop', 'org.qbittorrent.qBittorrent.desktop', 'xdman.desktop']
 next-applet-id=28
 panel-edit-mode=false
-panel-zone-icon-sizes='[{"panelId": 1, "left": 24, "center": 32, "right": 32}]'
-panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 20, "center": 28, "right": 25}]'
+panel-zone-icon-sizes='[{"panelId": 1, "left": 22, "center": 32, "right": 24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 20, "center": 20, "right": 26}]'
 panels-height=['1:36']
 
 [org/cinnamon/cinnamon-session]
 quit-time-delay=60
+
+[org/cinnamon/control-center/display]
+show-fractional-scaling-controls=true
 
 [org/cinnamon/desktop/a11y/keyboard]
 bouncekeys-beep-reject=true
@@ -81,23 +85,30 @@ exec='deepin-calculator'
 [org/cinnamon/desktop/applications/terminal]
 exec='gnome-terminal'
 
+[org/cinnamon/desktop/background]
+picture-uri='file:///home/natalie/Pictures/wallpaper/wallhaven-z862qw.jpg'
+
+[org/cinnamon/desktop/background/slideshow]
+delay=15
+image-source='directory:///home/natalie/Pictures/wallpaper'
+
 [org/cinnamon/desktop/interface]
 clock-show-date=false
 cursor-blink-time=1200
 cursor-size=24
 cursor-theme='capitaine-cursors-light'
-gtk-theme='Fluent-Light'
-icon-theme='Fluent'
+gtk-theme='Otis-forest'
+icon-theme='Fluent-dark'
 scaling-factor=uint32 0
 text-scaling-factor=1.1000000000000001
 
 [org/cinnamon/desktop/keybindings]
-custom-list=['custom3', 'custom0', '__dummy__', 'custom1', 'custom2']
+custom-list=['custom2', 'custom1', '__dummy__', 'custom0', 'custom3']
 looking-glass-keybinding=@as []
 
 [org/cinnamon/desktop/keybindings/custom-keybindings/custom0]
 binding=['<Primary><Shift>Escape']
-command='gnome-system-monitor'
+command='ksysguard'
 name='System Monitor'
 
 [org/cinnamon/desktop/keybindings/custom-keybindings/custom1]
@@ -125,8 +136,8 @@ move-to-workspace-left=['<Primary><Super>Left']
 move-to-workspace-right=['<Primary><Super>Right']
 push-snap-left=@as []
 push-snap-right=@as []
-switch-to-workspace-left=['<Primary><Shift>Left']
-switch-to-workspace-right=['<Primary><Shift>Right']
+switch-to-workspace-left=['<Primary><Alt>Left']
+switch-to-workspace-right=['<Primary><Alt>Right']
 
 [org/cinnamon/desktop/media-handling]
 automount-open=false
@@ -148,7 +159,7 @@ action-scroll-titlebar='shade'
 min-window-opacity=30
 mouse-button-modifier='<Super>'
 num-workspaces=2
-theme='Juno-ocean'
+theme='Otis-forest'
 titlebar-font='Ubuntu Medium 11'
 workspace-names=@as []
 
@@ -226,6 +237,9 @@ dwell-time=1.2
 secondary-click-enabled=false
 secondary-click-time=1.2
 
+[org/gnome/desktop/background]
+picture-uri='file:///home/natalie/Pictures/wallpaper/wallheaven-007.jpg'
+
 [org/gnome/desktop/calendar]
 show-weekdate=false
 
@@ -240,10 +254,24 @@ disable-microphone=false
 migrated=true
 network-monitor-gio-name=''
 
+[org/gnome/file-roller/dialogs/add]
+current-folder='file:///home/natalie/VS%20Code/mint-remix/files'
+exclude-files=''
+exclude-folders=''
+include-files='*'
+no-symlinks=true
+selected-files=@as []
+update=false
+
 [org/gnome/file-roller/dialogs/new]
 default-extension='.tar.xz'
 encrypt-header=false
 volume-size=0
+
+[org/gnome/file-roller/file-selector]
+show-hidden=false
+sidebar-size=168
+window-size=(840, 767)
 
 [org/gnome/file-roller/listing]
 list-mode='as-folder'
@@ -254,8 +282,9 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=480
-window-width=600
+view-sidebar=false
+window-height=617
+window-width=652
 
 [org/gnome/gnome-screenshot]
 border-effect='none'
@@ -263,6 +292,44 @@ delay=0
 include-border=true
 include-pointer=false
 last-save-directory='file:///home/natalie/Pictures'
+
+[org/gnome/gnome-system-monitor]
+current-tab='processes'
+maximized=false
+show-dependencies=false
+show-whose-processes='user'
+window-state=(715, 680, 341, 112)
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
+[org/gnome/gnome-system-monitor/proctree]
+col-1-visible=false
+col-1-width=98
+col-12-visible=true
+col-12-width=55
+col-14-visible=true
+col-14-width=120
+col-15-visible=true
+col-15-width=79
+col-2-visible=true
+col-2-width=73
+col-22-visible=false
+col-22-width=100
+col-23-visible=false
+col-23-width=100
+col-24-visible=false
+col-24-width=100
+col-25-visible=false
+col-25-width=100
+col-26-visible=false
+col-26-width=100
+col-8-visible=true
+col-8-width=58
+columns-order=[0, 12, 1, 2, 3, 4, 6, 8, 15, 9, 10, 11, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+sort-col=15
+sort-order=0
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
@@ -281,6 +348,14 @@ suppress-wireless-networks-available=true
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/nm-applet/eap/5cec8d60-8630-4278-91f2-561e165c8106]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/a383950b-6c73-44b1-8a11-8ccb3748b310]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [org/gnome/nm-applet/eap/f4fb0c6e-55cf-4d67-9e4a-65b7205d1150]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -294,9 +369,9 @@ background-transparency-percent=11
 cursor-shape='ibeam'
 default-size-columns=85
 default-size-rows=24
-font='Monospace 11'
-foreground-color='rgb(95,204,255)'
-palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(12,236,221)', 'rgb(12,236,221)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(162,57,234)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+font='Monospace 12'
+foreground-color='rgb(6,213,159)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(12,236,221)', 'rgb(12,236,221)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(255,113,153)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 scrollbar-policy='never'
 use-system-font=false
 use-theme-colors=false
@@ -322,29 +397,40 @@ use-theme-transparency=false
 use-transparent-background=true
 visible-name='natalie'
 
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.023529411764705944, 0.83529411764705885, 0.62352941176470578, 1.0), (0.37254901960784315, 0.80000000000000004, 1.0, 1.0), (1.0, 0.44313725490196076, 0.59999999999999976, 1.0), (0.63529411764705879, 0.22352941176470589, 0.91764705882352937, 1.0)]
+selected-color=(true, 0.023529411764705944, 0.83529411764705885, 0.62352941176470578, 1.0)
+
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=179
+sidebar-width=213
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(412, 135)
+window-position=(412, 74)
 window-size=(1096, 822)
 
 [org/nemo/desktop]
 computer-icon-visible=false
+desktop-layout='true::false'
 font='Ubuntu 11'
 home-icon-visible=true
 trash-icon-visible=true
 volumes-visible=false
 
+[org/nemo/extensions/nemo-terminal]
+default-terminal-height=11
+default-visible=true
+terminal-position='bottom'
+terminal-shell='gnome-terminal'
+
 [org/nemo/icon-view]
-captions=['none', 'size', 'none']
+captions=['none', 'none', 'size']
 
 [org/nemo/plugins]
 disabled-extensions=['NemoShare']
@@ -353,7 +439,7 @@ disabled-extensions=['NemoShare']
 bulk-rename-tool=b'thunar --bulk-rename'
 executable-text-activation='display'
 quick-renames-with-pause-in-between=true
-show-hidden-files=true
+show-hidden-files=false
 show-home-icon-toolbar=true
 show-location-entry=false
 show-new-folder-icon-toolbar=true
@@ -361,6 +447,7 @@ show-open-in-terminal-toolbar=true
 show-reload-icon-toolbar=true
 show-show-thumbnails-toolbar=true
 show-up-icon-toolbar=false
+size-prefixes='base-2'
 
 [org/nemo/preferences/menu-config]
 background-menu-scripts=false
@@ -374,7 +461,7 @@ search-content-use-regex=true
 
 [org/nemo/window-state]
 devices-expanded=false
-geometry='800x550+560+231'
+geometry='960x1015+0+0'
 maximized=true
 network-expanded=false
 sidebar-bookmark-breakpoint=7
@@ -398,12 +485,12 @@ disk-usage=false
 network-traffic=false
 
 [org/x/editor/plugins]
-active-plugins=['modelines', 'bracketcompletion', 'textsize', 'spell', 'filebrowser', 'time', 'joinlines', 'sort', 'wordcompletion', 'docinfo', 'open-uri-context-menu']
+active-plugins=['filebrowser', 'open-uri-context-menu', 'bracketcompletion', 'docinfo', 'sort', 'joinlines', 'time', 'wordcompletion', 'modelines', 'textsize', 'spell']
 
 [org/x/editor/plugins/filebrowser/on-load]
 root='file:///'
 tree-view=true
-virtual-root='file:///media/natalie/D-Drive/VS%20Code/mint-remix/files/cinnamon-configs/CinnVIIStarkMenu@NikoKrause'
+virtual-root='file:///home/natalie/.fonts'
 
 [org/x/editor/preferences/editor]
 auto-save=true
@@ -418,19 +505,20 @@ prefer-dark-theme=true
 scheme='cobalt'
 
 [org/x/editor/preferences/ui]
+enable-tab-scrolling=false
 menubar-visible=false
 minimap-visible=false
 statusbar-visible=false
 
 [org/x/editor/state/history-entry]
 history-replace-with=['-->>', 'wlp4s0', 'Mac OS', '💠-->', '  💠-->', '🔰⚫  14 Aug 2022', '🔰⚪  14 Aug 2022']
-history-search-for=['wlp3s0', 'Mac OS', 'VM Name', ' -->']
+history-search-for=['sudo apt install ', 'wlp3s0', 'Mac OS', 'VM Name', ' -->']
 
 [org/x/editor/state/window]
 bottom-panel-size=140
 side-panel-active-page=827629879
 side-panel-size=200
-size=(1052, 838)
+size=(960, 427)
 state=87168
 
 [org/x/pix/browser]
@@ -440,8 +528,8 @@ properties-visible=true
 show-thumbnails=true
 sort-inverse=false
 sort-type='file::mtime'
-startup-current-file='file://~/Downloads/IMG-20220823-WA0003.jpg'
-startup-location='file://~/Downloads'
+startup-current-file='file://~/Pictures/mintremix-01.png'
+startup-location='file://~/Pictures'
 thumbnail-list-size=132
 thumbnail-list-visible=false
 viewer-sidebar='tools'
@@ -450,7 +538,7 @@ viewer-sidebar-width=294
 [org/x/pix/crop]
 aspect-ratio='none'
 aspect-ratio-height=1
-aspect-ratio-invert=false
+aspect-ratio-invert=true
 aspect-ratio-width=1
 bind-dimensions=false
 bind-factor=8
@@ -478,5 +566,5 @@ default-width=uint32 250
 desktop-window-state=true
 first-run=false
 font='Ubuntu 18'
-latest-backup=uint32 1662897108
+latest-backup=uint32 1665838211
 old-backups-max=uint32 7

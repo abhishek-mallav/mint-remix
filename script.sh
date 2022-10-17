@@ -12,8 +12,9 @@ sleep 2
 
 echo "extracting THEMES"
 sudo tar -xf files/fluent-gtk-theme.tar.xz -C /usr/share/themes
-sudo tar -xf files/juno-ocean-gtk-theme.tar.xz -C /usr/share/themes
+sudo tar -xf files/otis-forest.tar.xz -C /usr/share/themes
 sudo tar -xf files/adara-dark.tar.xz -C /usr/share/themes
+sudo tar -xf files/layan-light.tar.xz -C /usr/share/themes
 sleep 2
 
 echo "extracting SOUNDS"
@@ -66,7 +67,7 @@ sudo apt install deepin-calculator -y
 sudo apt install okular -y 
 sudo apt install geeqie -y 
 sudo apt install gwenview -y 
-sudo apt install mpv -y 
+sudo apt install totem -y 
 sudo apt install vlc -y 
 sudo apt install soundkonverter -y 
 sudo apt install thunar -y 
