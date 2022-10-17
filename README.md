@@ -170,7 +170,7 @@ Mint Remix is a themed version of Linux Mint
 
 * okular gwenview 
 
-* mpv 
+* totem
 
 * vlc 
 
@@ -234,7 +234,7 @@ sudo ./script.sh
 
 ##### If you want to install conky go to
 
-###### [GitHub - abhishek-mallav/conky-remix: conky theme for linux](https://github.com/abhishek-mallav/conky-remix)
+###### [Github - abhishek-mallav/conky-remix](https://github.com/abhishek-mallav/conky-remix)
 
 ![Screenshot from 2022-10-13 17-49-59](https://user-images.githubusercontent.com/76923011/195605468-3ce94010-83f7-4ce0-a339-18b98d786474.png)
 
