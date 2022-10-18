@@ -227,7 +227,7 @@ chmod +x script.sh
 ```
 
 ```bash
-sudo ./script.sh
+./script.sh
 ```
 
 ### Conky is installed but not configured
