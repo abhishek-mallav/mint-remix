@@ -241,5 +241,3 @@ sudo ./script.sh
 Terminal, Icons, Panel (taskbar) are scaled for less eye strain
 
 conky is not scaled
-
----

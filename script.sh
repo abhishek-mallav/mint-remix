@@ -187,7 +187,7 @@ mkdir $HOME/Pictures/wallpaper
 cp files/wallpaper.jpg $HOME/Pictures/wallpaper
 echo "Applying Wallpaper"
 sleep 2
-gsettings set org.gnome.desktop.background picture-uri file://$HOME/Pictures/wallpaper/wallpaper.jpg
+gsettings set org.gnome.desktop.background picture-uri file:///$HOME/Pictures/wallpaper/wallpaper.jpg
 
 echo "Applying Login Wallpaper"
 sleep 2
