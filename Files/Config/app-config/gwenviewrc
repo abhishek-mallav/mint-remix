@@ -1,0 +1,83 @@
+Height 1080=754
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA8YAAALEAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+Width 1920=966
+
+[Crop]
+CropAdvancedSettingsEnabled=true
+
+[General]
+JPEGQuality=603990388
+ThumbnailActions=ThumbnailActions::ShowSelectionButtonOnly
+ViewBackgroundValue=0
+
+[ImageView]
+AlphaBackgroundMode=AbstractImageView::AlphaBackgroundCheckBoard
+AnimationMethod=DocumentView::GLAnimation
+MouseWheelBehavior=MouseWheelBehavior::Zoom
+ThumbnailSplitterSizes=546,156
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/VS Code/conky-remix/Screenshot from 2022-11-11 16-21-211.png,file:$HOME/VS Code/conky-remix/Screenshot from 2022-11-11 16-17-491.png
+Recent URLs[$e]=file:$HOME/VS Code/conky-remix/
+detailViewIconSize=0
+
+[KPropertiesDialog]
+Height 1080=470
+Width 1920=443
+
+[MainWindow]
+Height 1080=754
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAA7wAAALIAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=956
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+
+[Print]
+PrintHeight=15.01
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/Brave/nsfw/XIUREN No.5389 Lu Xuan Xuan (陆萱萱)/XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-003.jpg
+File10[$e]=$HOME/Downloads/Brave/nsfw/XIUREN No.5389 Lu Xuan Xuan (陆萱萱)/XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-061.jpg
+File2[$e]=$HOME/Downloads/Brave/nsfw/XIUREN No.5389 Lu Xuan Xuan (陆萱萱)/XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-004.jpg
+File3[$e]=$HOME/Downloads/Brave/nsfw/XIUREN No.5389 Lu Xuan Xuan (陆萱萱)/XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-005.jpg
+File4[$e]=$HOME/Downloads/Brave/nsfw/XIUREN No.5389 Lu Xuan Xuan (陆萱萱)/XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-006.jpg
+File5[$e]=$HOME/Downloads/Brave/nsfw/XIUREN No.5389 Lu Xuan Xuan (陆萱萱)/XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-007.jpg
+File6[$e]=$HOME/Downloads/Brave/nsfw/XIUREN No.5389 Lu Xuan Xuan (陆萱萱)/XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-008.jpg
+File7[$e]=$HOME/Data/Photos/DSC01883.JPG
+File8[$e]=$HOME/Data/Photos/DSC01882.JPG
+File9[$e]=$HOME/Data/Photos/DSC01854.JPG
+Name1[$e]=XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-003.jpg
+Name10[$e]=XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-061.jpg
+Name2[$e]=XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-004.jpg
+Name3[$e]=XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-005.jpg
+Name4[$e]=XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-006.jpg
+Name5[$e]=XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-007.jpg
+Name6[$e]=XIUREN-No.5389-Lu-Xuan-Xuan-MrCong.com-008.jpg
+Name7[$e]=DSC01883.JPG
+Name8[$e]=DSC01882.JPG
+Name9[$e]=DSC01854.JPG
+
+[SemanticInfoDialog]
+Height 1080=288
+Width 1920=318
+
+[SideBar]
+IsVisible BrowseMode=false
+IsVisible ViewMode=false
+PreferredMetaInfoKeyList=General.Name,General.Size,General.Time,General.ImageSize,General.Comment
+SideBarSplitterSizes=268,682
+
+[StatusBar]
+IsVisible BrowseMode=false
+IsVisible ViewMode=false
+
+[ThumbnailView]
+SortDescending=true
+Sorting=Sorting::Date
+
+[Toolbar mainToolBar]
+IconSize=16

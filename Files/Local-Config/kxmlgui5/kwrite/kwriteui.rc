@@ -1,0 +1,100 @@
+<!DOCTYPE gui>
+<gui translationDomain="kxmlgui5" name="kwrite" version="17">
+ <MenuBar alreadyVisited="1">
+  <Menu alreadyVisited="1" noMerge="1" name="file">
+   <text translationDomain="kwrite">&amp;File</text>
+   <Action name="file_new"/>
+   <Separator/>
+   <Action name="file_open"/>
+   <Action name="file_open_recent"/>
+   <Separator/>
+   <DefineGroup name="save_merge" append="save_merge"/>
+   <Separator/>
+   <DefineGroup name="revert_merge" append="revert_merge"/>
+   <DefineGroup name="print_merge" append="print_merge"/>
+   <Separator/>
+   <Action name="file_close"/>
+   <DefineGroup name="close_merge" append="close_merge"/>
+   <Separator/>
+   <Action name="file_quit"/>
+  </Menu>
+  <Menu alreadyVisited="1" noMerge="1" name="edit">
+   <text translationDomain="kwrite">&amp;Edit</text>
+   <DefineGroup name="edit_undo_merge"/>
+   <Separator/>
+   <DefineGroup name="edit_paste_merge"/>
+   <Separator/>
+   <DefineGroup name="edit_select_merge"/>
+   <Separator/>
+   <DefineGroup name="edit_find_merge"/>
+   <Separator/>
+   <Merge/>
+  </Menu>
+  <Menu alreadyVisited="1" noMerge="1" name="view">
+   <text translationDomain="kwrite">&amp;View</text>
+   <Action name="view_new_view"/>
+   <Separator/>
+   <DefineGroup name="view_operations"/>
+  </Menu>
+  <Merge/>
+  <Menu alreadyVisited="1" noMerge="1" name="tools">
+   <text translationDomain="kwrite">&amp;Tools</text>
+   <DefineGroup name="tools_operations"/>
+  </Menu>
+  <Menu alreadyVisited="1" noMerge="1" name="settings">
+   <text translationDomain="kxmlgui5">&amp;Settings</text>
+   <DefineGroup name="show_toolbar_merge"/>
+   <DefineGroup name="show_merge"/>
+   <Action name="options_configure_toolbars"/>
+   <Separator weakSeparator="1"/>
+   <Action name="options_show_menubar"/>
+   <Merge name="StandardToolBarMenuHandler"/>
+   <Merge name="KMDIViewActions"/>
+   <Action name="options_show_statusbar"/>
+   <Action name="set_showPath" append="show_merge"/>
+   <Separator weakSeparator="1"/>
+   <DefineGroup name="configure_merge" append="save_merge"/>
+   <Separator weakSeparator="1"/>
+   <Action name="options_configure_keybinding"/>
+   <Action name="options_configure_toolbars"/>
+   <Action name="settings_configure" append="configure_merge"/>
+  </Menu>
+  <Separator weakSeparator="1"/>
+  <Menu alreadyVisited="1" noMerge="1" name="help">
+   <text translationDomain="kxmlgui5">&amp;Help</text>
+   <Action name="help_contents"/>
+   <Action name="help_whats_this"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_report_bug"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_donate"/>
+   <Separator weakSeparator="1"/>
+   <Action name="switch_application_language"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_about_editor" append="about_merge"/>
+   <Action name="help_about_app"/>
+   <Action name="help_about_kde"/>
+  </Menu>
+ </MenuBar>
+ <ToolBar alreadyVisited="1" noMerge="1" name="mainToolBar">
+  <Action name="file_new"/>
+  <Separator name="separator_0"/>
+  <Action name="file_open"/>
+  <Action name="file_open_recent"/>
+  <Separator name="separator_1"/>
+  <Separator name="separator_2"/>
+  <text translationDomain="kwrite">Main Toolbar</text>
+  <DefineGroup name="file_operations"/>
+  <Separator name="separator_3"/>
+  <DefineGroup name="print_merge"/>
+  <Separator name="separator_4"/>
+  <Separator name="separator_5"/>
+  <DefineGroup name="edit_operations"/>
+  <Separator name="separator_6"/>
+  <DefineGroup name="find_operations"/>
+  <DefineGroup name="zoom_operations"/>
+ </ToolBar>
+ <Menu noMerge="1" name="ktexteditor_popup">
+  <DefineGroup name="popup_operations"/>
+ </Menu>
+</gui>

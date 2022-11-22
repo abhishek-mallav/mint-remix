@@ -1,0 +1,16 @@
+[DownloadDialog Settings]
+Height 1080=452
+Width 1920=700
+
+[MainWindow]
+CommandList=
+Height 1080=693
+HostList=
+MenuBar=Disabled
+SelectedSheets[$e]=ProcessTable.sgrd,System Load and Temps-1.01.sgrd
+SplitterSizeList=10,90
+State=AAAA/wAAAAD9AAAAAAAAAo8AAAKdAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=655
+currentSheet=0
+isMinimized=false

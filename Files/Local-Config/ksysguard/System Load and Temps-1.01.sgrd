@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE KSysGuardWorkSheet>
+<WorkSheet locked="1" columns="2" rows="3" title="System Load" interval="0.5">
+ <host command="ksysguardd" port="-1" name="localhost" shell=""/>
+ <display rowSpan="1" hScale="6" stacked="1" row="0" hLines="0" autoRange="1" version="1" columnSpan="2" svgBackground="" column="0" vScroll="0" unit="" showUnit="0" labels="1" fontSize="11" manualRange="0" class="FancyPlotter" vLines="0" title="CPU History" vDistance="30">
+  <beam hostName="localhost" sensorType="float" color="0xffff0004,0xffef002b,0xfff30055,0xffff0084,0xffa90073,0xffa90090,0xffa600a9,0xff8a00a9,0xff6b00a9,0xff5800bd,0xff3c00bd,0xff2600fd" regexpSensorName="cpu/cpu.*/TotalLoad"/>
+ </display>
+ <display rowSpan="1" hScale="6" stacked="0" row="1" hLines="1" autoRange="1" version="1" columnSpan="1" svgBackground="" column="0" vScroll="0" unit="" showUnit="0" labels="1" fontSize="11" manualRange="0" class="FancyPlotter" vLines="0" title="Memory and Swap History" vDistance="30">
+  <beam sensorName="mem/physical/application" hostName="localhost" sensorType="integer" summationName="Memory" color="0xffc000c0"/>
+  <beam sensorName="mem/swap/used" hostName="localhost" sensorType="integer" summationName="Swap" color="0xff00c000"/>
+ </display>
+ <display rowSpan="1" hScale="6" stacked="0" row="1" hLines="1" autoRange="1" version="1" columnSpan="1" svgBackground="" column="1" vScroll="0" unit="" showUnit="0" labels="1" fontSize="11" manualRange="0" class="FancyPlotter" vLines="0" title="Network History" vDistance="30">
+  <beam hostName="localhost" sensorType="float" summationName="Receiving" color="0xffb3a52d" regexpSensorName="network/interfaces/(?!lo|bridge|usbus|bond).*/receiver/data"/>
+  <beam hostName="localhost" sensorType="float" summationName="Sending" color="0xff844798" regexpSensorName="network/interfaces/(?!lo|bridge|usbus|bond).*/transmitter/data"/>
+ </display>
+ <display rowSpan="1" hScale="6" stacked="0" row="2" hLines="1" autoRange="1" version="1" columnSpan="1" svgBackground="" column="0" vScroll="0" unit="" showUnit="0" labels="1" fontSize="11" manualRange="0" class="FancyPlotter" vLines="0" title="Core Temperatures" vDistance="30"/>
+ <display rowSpan="1" hScale="6" stacked="0" row="2" hLines="0" autoRange="1" version="1" columnSpan="1" svgBackground="" column="1" vScroll="0" unit="" showUnit="0" labels="1" fontSize="11" manualRange="0" class="FancyPlotter" vLines="0" title="Hard Disk Totals" vDistance="30">
+  <beam hostName="localhost" sensorType="float" summationName="Reads" color="0xff0057ae" regexpSensorName="disk/(nvme(\d+|\d+n\d+)|sd[a-z]+|mmcblk\d+)_.*/Rate/rblk"/>
+  <beam hostName="localhost" sensorType="float" summationName="Writes" color="0xffaa00ff" regexpSensorName="disk/(nvme(\d+|\d+n\d+)|sd[a-z]+|mmcblk\d+)_.*/Rate/wblk"/>
+ </display>
+</WorkSheet>

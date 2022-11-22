@@ -1,0 +1,72 @@
+{
+    "com.github.melianmiko.ulauncher-nmcli": {
+        "id": "com.github.melianmiko.ulauncher-nmcli",
+        "url": "https://github.com/melianmiko/ulauncher-nmcli",
+        "updated_at": "2022-08-01T13:08:43.820652",
+        "last_commit": "fe967c947748616df602c9d022fec6d68a6b2cf2",
+        "last_commit_time": "2022-05-01T12:20:38"
+    },
+    "com.github.barathbheeman.vsw-extension": {
+        "id": "com.github.barathbheeman.vsw-extension",
+        "url": "https://github.com/barathbheeman/vsw-extension/",
+        "updated_at": "2022-08-01T13:08:46.462354",
+        "last_commit": "080d8aaa359bfbd2f47a856138478de7c506fc36",
+        "last_commit_time": "2022-06-17T18:11:12"
+    },
+    "com.github.hoaper.ulauncher-zh0per": {
+        "id": "com.github.hoaper.ulauncher-zh0per",
+        "url": "https://github.com/Hoaper/ulauncher-zh0per",
+        "updated_at": "2022-08-01T13:08:48.525277",
+        "last_commit": "e88a88bccd4f57b981781bd6b2bb7bd0606db0b2",
+        "last_commit_time": "2022-04-04T09:16:21"
+    },
+    "com.github.rootwork.ulauncher-symbol": {
+        "id": "com.github.rootwork.ulauncher-symbol",
+        "url": "https://github.com/rootwork/ulauncher-symbol",
+        "updated_at": "2022-08-01T13:08:52.311824",
+        "last_commit": "c5d7ab5c94c1b418cb1f8a9161be169a29c65658",
+        "last_commit_time": "2022-02-24T01:17:09"
+    },
+    "com.github.plibither8.ulauncher-vscode-recent": {
+        "id": "com.github.plibither8.ulauncher-vscode-recent",
+        "url": "https://github.com/plibither8/ulauncher-vscode-recent",
+        "updated_at": "2022-08-01T13:08:54.077651",
+        "last_commit": "610dc19a6bab76fd9438e1059aba849201a4a4aa",
+        "last_commit_time": "2022-05-19T11:37:12"
+    },
+    "com.github.tchar.ulauncher-albert-calculate-anything": {
+        "id": "com.github.tchar.ulauncher-albert-calculate-anything",
+        "url": "https://github.com/tchar/ulauncher-albert-calculate-anything",
+        "updated_at": "2022-08-01T13:08:57.656129",
+        "last_commit": "ee0903174c8b87cd1f7c3b6c1acef10702547507",
+        "last_commit_time": "2021-08-12T06:39:56"
+    },
+    "com.github.nastuzzisamy.ulauncher-youtube-search": {
+        "id": "com.github.nastuzzisamy.ulauncher-youtube-search",
+        "url": "https://github.com/NastuzziSamy/ulauncher-youtube-search",
+        "updated_at": "2022-08-01T13:08:59.887650",
+        "last_commit": "fe855811358b2f15ec6ed69ca18e20639874fa28",
+        "last_commit_time": "2021-03-27T11:29:18"
+    },
+    "com.github.episode6.ulauncher-system-management-direct": {
+        "id": "com.github.episode6.ulauncher-system-management-direct",
+        "url": "https://github.com/episode6/ulauncher-system-management-direct",
+        "updated_at": "2022-08-01T13:09:02.050085",
+        "last_commit": "c6c0febff9eae884e4a8bc97d057480436fb5c9b",
+        "last_commit_time": "2020-07-22T18:41:36"
+    },
+    "com.github.ulauncher.ulauncher-kill": {
+        "id": "com.github.ulauncher.ulauncher-kill",
+        "url": "https://github.com/Ulauncher/ulauncher-kill",
+        "updated_at": "2022-08-01T13:09:03.668224",
+        "last_commit": "7ba3f9fb273c4cbbecd26352c88a3156205417db",
+        "last_commit_time": "2020-01-05T13:02:00"
+    },
+    "com.github.ulauncher.ulauncher-emoji": {
+        "id": "com.github.ulauncher.ulauncher-emoji",
+        "url": "https://github.com/Ulauncher/ulauncher-emoji",
+        "updated_at": "2022-08-01T13:09:09.476896",
+        "last_commit": "4c6af50d1c9a24d5aad2c597634ff0c634972a5c",
+        "last_commit_time": "2021-08-08T19:19:59"
+    }
+}

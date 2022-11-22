@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE KSysGuardWorkSheet>
+<WorkSheet interval="0.5" rows="3" columns="1" locked="1" title="System Load">
+ <host shell="" port="-1" command="ksysguardd" name="localhost"/>
+ <display rowSpan="1" row="0" title="CPU History" svgBackground="widgets/plot-background" column="0" hScale="6" showUnit="0" columnSpan="1" fontSize="8" vScroll="0" class="FancyPlotter" manualRange="0" autoRange="0" hLines="1" unit="" version="1" stacked="0" labels="1" vLines="0" vDistance="30">
+  <beam hostName="localhost" regexpSensorName="cpu/cpu.*/TotalLoad" color="0xffff8000,0xffe20800,0xfff3c300,0xffff0000,0xff00a900,0xff0028a9,0xffa92928,0xff28a929,0xff297da9,0xffa9bd7d,0xff7dbdbd,0xffbdfdbd" sensorType="float"/>
+ </display>
+ <display rowSpan="1" row="1" title="Memory and Swap History" svgBackground="widgets/plot-background" column="0" hScale="6" showUnit="0" columnSpan="1" fontSize="8" vScroll="0" class="FancyPlotter" manualRange="0" autoRange="0" hLines="1" unit="" version="1" stacked="0" labels="1" vLines="0" vDistance="30">
+  <beam hostName="localhost" color="0xffc000c0" sensorType="integer" summationName="Memory" sensorName="mem/physical/application"/>
+  <beam hostName="localhost" color="0xff00c000" sensorType="integer" summationName="Swap" sensorName="mem/swap/used"/>
+ </display>
+ <display rowSpan="1" row="2" title="Network History" svgBackground="widgets/plot-background" column="0" hScale="6" showUnit="0" columnSpan="1" fontSize="8" vScroll="0" class="FancyPlotter" manualRange="1" autoRange="1" hLines="1" unit="" max="20" version="1" stacked="0" labels="1" min="0" vLines="0" vDistance="30">
+  <beam hostName="localhost" regexpSensorName="network/interfaces/(?!lo|bridge|usbus|bond).*/receiver/data" color="0xffb3a52d" sensorType="float" summationName="Receiving"/>
+  <beam hostName="localhost" regexpSensorName="network/interfaces/(?!lo|bridge|usbus|bond).*/transmitter/data" color="0xff844798" sensorType="float" summationName="Sending"/>
+ </display>
+</WorkSheet>
