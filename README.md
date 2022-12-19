@@ -8,15 +8,15 @@ Mint Remix is a themed version of Linux Mint
 
 ### Themes
 
-* GTK Theme - **Fluent for light theme** & **Otis-Forest for dark theme**
+* GTK Theme - **Sweet Ambar Blue for light theme** **&** **Otis-Forest for dark theme**
 
-* Icon Theme - **Fluent (light/dark)**
+* Icon Theme - **Colloid (light/dark)**
 
 * Cursot Theme - **Capitaine light**
 
 * Task Bar Theme - **Adara Dark**
 
-* Qt Theme - **Kvantum Carl *(for qt apps)***
+* Qt Theme - **PearOS Dark *(for qt apps)***
 
 ### TaskBar
 
@@ -90,7 +90,7 @@ Mint Remix is a themed version of Linux Mint
   
   * Super *(Windows)* + K to open color picker
   
-  * Super *(Windows)* + F to open fsearch *(Linux alternative to Search Everything)*
+  * Super *(Windows)* + F to open fsearch *(Windows alternative of Search Everything for Linux)*
   
   * Ctrl + Shift + X to close the selected window 
 
@@ -136,7 +136,7 @@ Mint Remix is a themed version of Linux Mint
 
 * rhythmbox 
 
-* transmission-gtk  *(replaced by qBittorrent)*
+* transmission-gtk  *(replaced with qBittorrent)*
 
 * thunderbird 
 
@@ -144,9 +144,9 @@ Mint Remix is a themed version of Linux Mint
 
 * warpinator 
 
-* xreader  *(replaced by Okular)*
+* xreader  *(replaced with Okular)*
 
-* xviewer  *(replaced by Deepin Image Viewer)*
+* xviewer  *(replaced with Deepin Image Viewer)*
 
 * gnome-calculator  (replaced with Deepin Calculator)
 
@@ -208,7 +208,9 @@ Mint Remix is a themed version of Linux Mint
 
 ### How to install
 
-- open the terminal *(you need to have git installed if not install it with)*
+open the terminal 
+
+*(you need to have git installed if not install it with)*
 
 ```bash
 sudo apt install git
@@ -219,7 +221,7 @@ git clone https://github.com/abhishek-mallav/mint-remix.git
 ```
 
 ```bash
-cd $HOME/mint-remix
+cd mint-remix
 ```
 
 ```bash
@@ -232,12 +234,12 @@ chmod +x script.sh
 
 ### Conky is installed but not configured
 
-##### If you want to install conky go to
+##### If you want to install and configure conky go to
 
 ###### [Github - abhishek-mallav/conky-remix](https://github.com/abhishek-mallav/conky-remix)
 
 ![Screenshot from 2022-10-13 17-49-59](https://user-images.githubusercontent.com/76923011/195605468-3ce94010-83f7-4ce0-a339-18b98d786474.png)
 
-Terminal, Icons, Panel (taskbar) are scaled for less eye strain
+Terminal, Icons, Panel (taskbar) are scaled for better visual
 
 conky is not scaled
