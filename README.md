@@ -46,7 +46,7 @@ Mint Remix is a themed version of Linux Mint
 
 - Just Like Windows a Show Desktop Applet has been added with hover to peek feature
 
-![mintremix-03](https://user-images.githubusercontent.com/76923011/195605302-25ada6ad-4764-4f6b-a53a-45ac05e16b92.png)
+![mintremix-03](https://github.com/abhishek-mallav/mint-remix/blob/main/Preview/taskbar.png)
 
 ![mintremix-04](https://user-images.githubusercontent.com/76923011/195605388-fedeb6d0-5667-4910-90c9-9edc2e4380a5.png)
 
