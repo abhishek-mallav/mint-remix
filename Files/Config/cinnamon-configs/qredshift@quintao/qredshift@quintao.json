@@ -214,7 +214,7 @@
         "units": "K",
         "step": 5,
         "description": "Temperature",
-        "value": 3000
+        "value": 4000
     },
     "dayBrightness": {
         "type": "spinbutton",
@@ -234,7 +234,7 @@
         "units": "",
         "step": 0.01,
         "description": "Gamma",
-        "value": 1.4
+        "value": 1.25
     },
     "enabledNight": {
         "type": "checkbox",
@@ -306,7 +306,7 @@
         "units": "K",
         "step": 5,
         "description": "Temperature",
-        "value": 2500
+        "value": 2750
     },
     "nightBrightness": {
         "type": "spinbutton",

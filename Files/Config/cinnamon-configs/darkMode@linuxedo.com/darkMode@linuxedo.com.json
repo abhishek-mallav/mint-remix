@@ -108,20 +108,17 @@
         "type": "combobox",
         "default": "none",
         "options": {
+            "Juno-ocean": "Juno-ocean",
+            "Lavanda": "Lavanda",
+            "Otis-forest": "Otis-forest",
             "Adwaita": "Adwaita",
             "Adwaita-dark": "Adwaita-dark",
-            "Canta-light": "Canta-light",
-            "Fluent-Light": "Fluent-Light",
             "HighContrast": "HighContrast",
-            "Juno-ocean": "Juno-ocean",
-            "Juno-ocean-v40": "Juno-ocean-v40",
             "Layan-Light": "Layan-Light",
             "Mint-X": "Mint-X",
             "Mint-Y": "Mint-Y",
-            "Otis-forest": "Otis-forest",
             "Sweet-Ambar-Blue": "Sweet-Ambar-Blue",
-            "Sweet-Dark": "Sweet-Dark",
-            "WhiteSur-Light": "WhiteSur-Light"
+            "Sweet-Dark": "Sweet-Dark"
         },
         "description": "Window control theme",
         "value": "Sweet-Ambar-Blue"
@@ -130,38 +127,32 @@
         "type": "combobox",
         "default": "none",
         "options": {
+            "Juno-ocean": "Juno-ocean",
+            "Lavanda": "Lavanda",
+            "Otis-forest": "Otis-forest",
             "Adwaita": "Adwaita",
             "Adwaita-dark": "Adwaita-dark",
-            "Canta-light": "Canta-light",
-            "Fluent-Light": "Fluent-Light",
             "HighContrast": "HighContrast",
-            "Juno-ocean": "Juno-ocean",
-            "Juno-ocean-v40": "Juno-ocean-v40",
             "Layan-Light": "Layan-Light",
             "Mint-X": "Mint-X",
             "Mint-Y": "Mint-Y",
-            "Otis-forest": "Otis-forest",
             "Sweet-Ambar-Blue": "Sweet-Ambar-Blue",
-            "Sweet-Dark": "Sweet-Dark",
-            "WhiteSur-Light": "WhiteSur-Light"
+            "Sweet-Dark": "Sweet-Dark"
         },
         "description": "Window control theme",
-        "value": "Sweet-Dark"
+        "value": "Otis-forest"
     },
     "light_win_border_theme": {
         "type": "combobox",
         "default": "none",
         "options": {
-            "Canta-light": "Canta-light",
-            "Fluent-Light": "Fluent-Light",
             "Juno-ocean": "Juno-ocean",
-            "Juno-ocean-v40": "Juno-ocean-v40",
+            "Lavanda": "Lavanda",
+            "Otis-forest": "Otis-forest",
             "Mint-X": "Mint-X",
             "Mint-Y": "Mint-Y",
-            "Otis-forest": "Otis-forest",
             "Sweet-Ambar-Blue": "Sweet-Ambar-Blue",
-            "Sweet-Dark": "Sweet-Dark",
-            "WhiteSur-Light": "WhiteSur-Light"
+            "Sweet-Dark": "Sweet-Dark"
         },
         "description": "Window border theme",
         "value": "Sweet-Dark"
@@ -170,16 +161,13 @@
         "type": "combobox",
         "default": "none",
         "options": {
-            "Canta-light": "Canta-light",
-            "Fluent-Light": "Fluent-Light",
             "Juno-ocean": "Juno-ocean",
-            "Juno-ocean-v40": "Juno-ocean-v40",
+            "Lavanda": "Lavanda",
+            "Otis-forest": "Otis-forest",
             "Mint-X": "Mint-X",
             "Mint-Y": "Mint-Y",
-            "Otis-forest": "Otis-forest",
             "Sweet-Ambar-Blue": "Sweet-Ambar-Blue",
-            "Sweet-Dark": "Sweet-Dark",
-            "WhiteSur-Light": "WhiteSur-Light"
+            "Sweet-Dark": "Sweet-Dark"
         },
         "description": "Window border theme",
         "value": "Sweet-Dark"
@@ -188,18 +176,15 @@
         "type": "combobox",
         "default": "none",
         "options": {
-            "Adara-Dark": "Adara-Dark",
-            "Canta-light": "Canta-light",
-            "Fluent-Light": "Fluent-Light",
             "Juno-ocean": "Juno-ocean",
-            "Juno-ocean-v40": "Juno-ocean-v40",
+            "Lavanda": "Lavanda",
+            "Otis-forest": "Otis-forest",
+            "Adara-Dark": "Adara-Dark",
             "Linux Mint": "Linux Mint",
             "Mint-X": "Mint-X",
             "Mint-Y": "Mint-Y",
-            "Otis-forest": "Otis-forest",
             "Sweet-Ambar-Blue": "Sweet-Ambar-Blue",
-            "Sweet-Dark": "Sweet-Dark",
-            "WhiteSur-Light": "WhiteSur-Light"
+            "Sweet-Dark": "Sweet-Dark"
         },
         "description": "Desktop theme",
         "value": "Adara-Dark"
@@ -208,18 +193,15 @@
         "type": "combobox",
         "default": "none",
         "options": {
-            "Adara-Dark": "Adara-Dark",
-            "Canta-light": "Canta-light",
-            "Fluent-Light": "Fluent-Light",
             "Juno-ocean": "Juno-ocean",
-            "Juno-ocean-v40": "Juno-ocean-v40",
+            "Lavanda": "Lavanda",
+            "Otis-forest": "Otis-forest",
+            "Adara-Dark": "Adara-Dark",
             "Linux Mint": "Linux Mint",
             "Mint-X": "Mint-X",
             "Mint-Y": "Mint-Y",
-            "Otis-forest": "Otis-forest",
             "Sweet-Ambar-Blue": "Sweet-Ambar-Blue",
-            "Sweet-Dark": "Sweet-Dark",
-            "WhiteSur-Light": "WhiteSur-Light"
+            "Sweet-Dark": "Sweet-Dark"
         },
         "description": "Desktop theme",
         "value": "Adara-Dark"
@@ -228,9 +210,6 @@
         "type": "combobox",
         "default": "none",
         "options": {
-            "Colloid-green-dracula": "Colloid-green-dracula",
-            "Colloid-green-dracula-dark": "Colloid-green-dracula-dark",
-            "Colloid-green-dracula-light": "Colloid-green-dracula-light",
             "hicolor": "hicolor",
             "Adwaita": "Adwaita",
             "Colloid": "Colloid",
@@ -239,7 +218,6 @@
             "Colloid-purple": "Colloid-purple",
             "Colloid-purple-dark": "Colloid-purple-dark",
             "Colloid-purple-light": "Colloid-purple-light",
-            "Custom Icons": "Custom Icons",
             "DMZ-Black": "DMZ-Black",
             "DMZ-White": "DMZ-White",
             "Flat-Remix-Blue-Dark": "Flat-Remix-Blue-Dark",
@@ -250,6 +228,8 @@
             "HighContrast": "HighContrast",
             "Mint-X": "Mint-X",
             "Mint-Y": "Mint-Y",
+            "a_icons": "a_icons",
+            "a_nsfw": "a_nsfw",
             "breeze": "breeze",
             "capitaine-cursors-light": "capitaine-cursors-light",
             "deepin": "deepin",
@@ -257,7 +237,6 @@
             "elementary": "elementary",
             "gnome": "gnome",
             "locolor": "locolor",
-            "nsfw": "nsfw",
             "ubuntu-mono-dark": "ubuntu-mono-dark",
             "ubuntu-mono-light": "ubuntu-mono-light"
         },
@@ -268,9 +247,6 @@
         "type": "combobox",
         "default": "none",
         "options": {
-            "Colloid-green-dracula": "Colloid-green-dracula",
-            "Colloid-green-dracula-dark": "Colloid-green-dracula-dark",
-            "Colloid-green-dracula-light": "Colloid-green-dracula-light",
             "hicolor": "hicolor",
             "Adwaita": "Adwaita",
             "Colloid": "Colloid",
@@ -279,7 +255,6 @@
             "Colloid-purple": "Colloid-purple",
             "Colloid-purple-dark": "Colloid-purple-dark",
             "Colloid-purple-light": "Colloid-purple-light",
-            "Custom Icons": "Custom Icons",
             "DMZ-Black": "DMZ-Black",
             "DMZ-White": "DMZ-White",
             "Flat-Remix-Blue-Dark": "Flat-Remix-Blue-Dark",
@@ -290,6 +265,8 @@
             "HighContrast": "HighContrast",
             "Mint-X": "Mint-X",
             "Mint-Y": "Mint-Y",
+            "a_icons": "a_icons",
+            "a_nsfw": "a_nsfw",
             "breeze": "breeze",
             "capitaine-cursors-light": "capitaine-cursors-light",
             "deepin": "deepin",
@@ -297,12 +274,11 @@
             "elementary": "elementary",
             "gnome": "gnome",
             "locolor": "locolor",
-            "nsfw": "nsfw",
             "ubuntu-mono-dark": "ubuntu-mono-dark",
             "ubuntu-mono-light": "ubuntu-mono-light"
         },
         "description": "Icon theme",
-        "value": "Colloid-purple"
+        "value": "Colloid"
     },
     "enable_light_background_switch": {
         "type": "switch",
@@ -318,7 +294,7 @@
         "dependency": "enable_light_background_switch=true",
         "description": "Desktop background location",
         "tooltip": "A picture from this folder will be randomly chosen.",
-        "value": "file:///home/natalie/Pictures/Wallpaper/Light"
+        "value": "file:///home/natalie/Pictures/Wallpaper/light"
     },
     "enable_dark_background_switch": {
         "type": "switch",
@@ -334,7 +310,7 @@
         "dependency": "enable_dark_background_switch=true",
         "description": "Desktop background location",
         "tooltip": "A picture from this folder will be randomly chosen.",
-        "value": "file:///home/natalie/Pictures/Wallpaper/Dark"
+        "value": "file:///home/natalie/Pictures/Wallpaper/dark"
     },
     "postpone_auto_mode_until": {
         "type": "generic",

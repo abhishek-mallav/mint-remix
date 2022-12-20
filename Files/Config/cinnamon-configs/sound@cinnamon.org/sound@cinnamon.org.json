@@ -38,7 +38,8 @@
             "org.kde.gwenview",
             "deepin-music",
             "io.github.celluloid_player.Celluloid",
-            "com.rafaelmardojai.Blanket"
+            "com.rafaelmardojai.Blanket",
+            "com.github.neithern.g4music"
         ]
     },
     "section2": {

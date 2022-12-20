@@ -457,18 +457,6 @@
             },
             {
                 "checkbox": true,
-                "directory": "file:///home/natalie/Data",
-                "label": "Data",
-                "icon": "x-office-document-symbolic"
-            },
-            {
-                "checkbox": true,
-                "directory": "file:///media/natalie/D-Drive/Work",
-                "label": "Work",
-                "icon": "applications-graphics-symbolic"
-            },
-            {
-                "checkbox": true,
                 "directory": "~/Music",
                 "label": "",
                 "icon": "folder-music-symbolic"
@@ -490,12 +478,6 @@
                 "directory": "~/Downloads",
                 "label": "",
                 "icon": "folder-download-symbolic"
-            },
-            {
-                "checkbox": true,
-                "directory": "file:///media/natalie/D-Drive",
-                "label": "D-Drive",
-                "icon": "folder-symbolic"
             }
         ]
     },
@@ -573,7 +555,7 @@
             },
             {
                 "checkbox": true,
-                "command": "ksysguard",
+                "command": "gnome-system-monitor",
                 "label": "System Monitor",
                 "icon": "utilities-system-monitor-symbolic"
             },
@@ -606,24 +588,6 @@
                 "command": "gnome-screenshot --interactive",
                 "label": "Screenshot",
                 "icon": "gnome-screenshot-symbolic"
-            },
-            {
-                "checkbox": true,
-                "command": "nautilus",
-                "label": "Nautilus",
-                "icon": "nautilus"
-            },
-            {
-                "checkbox": true,
-                "command": "dolphin",
-                "label": "Dolphin",
-                "icon": "org.kde.dolphin"
-            },
-            {
-                "checkbox": true,
-                "command": "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm",
-                "label": "Whatsapp",
-                "icon": "whatsapp"
             }
         ]
     },

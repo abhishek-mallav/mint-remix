@@ -6,6 +6,7 @@ sudo tar -xf Files/Themes/adara-dark.tar.xz -C /usr/share/themes
 echo "Installing Themes"
 sudo tar -xf Files/Themes/adara-dark.tar.xz -C /usr/share/themes
 sudo tar -xf Files/Themes/layan-light.tar.xz -C /usr/share/themes
+sudo tar -xf Files/Themes/otis-forest.tar.xz -C /usr/share/themes
 sudo unzip Files/Themes/sweet-dark.zip -d /usr/share/themes
 sudo unzip Files/Themes/sweet-ambar-blue.zip -d /usr/share/themes
 
@@ -21,6 +22,9 @@ sudo tar -xf Files/Icons/cursor-theme.tar.gz -C /usr/share/icons
 echo "Copying Sounds"
 sudo cp -r Files/Sounds/* /usr/share/sounds
 
+echo "Copying Fonts"
+sudo cp -r Files/Fonts/* /usr/share/fonts
+
 echo "Copying Config"
 cp -r Files/Local-Config/* $HOME/.local/share
 
@@ -29,6 +33,7 @@ cp -r Files/Config/cinnamon-configs/* $HOME/.cinnamon/configs
 
 echo "Copying App Config"
 cp -r Files/Config/app-config/* $HOME/.config
+
 # --------------------------------------------------------------------
 echo "Adding Repositories"
 
@@ -89,20 +94,7 @@ sudo apt upgrade -y
 
 sudo apt remove gnome-calculator timidity -y
 sudo apt autoremove -y
-# ----------------------------------------------------------
-read -p "Do You Want To Remove Default Themes (yes or no) : " input01
-if [ $input01 = yes ] || [ $input01 = y ]
-then
-    echo "Removing Default Themes"
-    sleep 2
-    sudo rm -r /usr/share/themes/Mint-X-*
-    sudo rm -r /usr/share/themes/Mint-Y-*
-    sudo rm -r /usr/share/icons/Mint-X-*
-    sudo rm -r /usr/share/icons/Mint-Y-*
-else
-    echo "OK"
-    sleep 2
-fi
+
 # ----------------------------------------------------------
 echo "Cloning Bashrc"
 sleep 2
@@ -122,21 +114,30 @@ echo "Applying Login Wallpaper"
 sleep 2
 sudo cp Files/Wallpaper/wallheaven.jpeg /usr/share/backgrounds
 sudo cp Files/slick-greeter.conf /etc/lightdm/
-# -----------------------------------------------------------
-mkdir $HOME/Data
-mkdir ~/.fonts
-cp -r Files/Fonts/* $HOME/.fonts
+
+# ----------------------------------------------------------
+read -p "Do You Want To Remove Default Themes (yes or no) : " input01
+if [ $input01 = yes ] || [ $input01 = y ]
+then
+    echo "Removing Default Themes"
+    sleep 2
+    sudo rm -r /usr/share/themes/Mint-X-*
+    sudo rm -r /usr/share/themes/Mint-Y-*
+    sudo rm -r /usr/share/icons/Mint-X-*
+    sudo rm -r /usr/share/icons/Mint-Y-*
+else
+    echo "OK"
+    sleep 2
+fi
+
 # -----------------------------------------------------------
 read -p "Do You Want To Apply GRUB Theme (yes or no) : " input07
 if [ $input07 = yes ] || [ $input07 = y ]
 then
     echo "Applying GRUB Theme"
     sleep 10
-    cd Files/GRUB/
-    chmod +x install.sh
-    sudo ./install.sh
-    cd ..
-    cd ..
+    chmod +x Files/GRUB/install.sh
+    sudo ./Files/GRUB/install.sh
 else
     echo "OK"
     sleep 2
@@ -150,17 +151,9 @@ dconf load '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/' <
 
 dconf load /org/gnome/terminal/ < Files/gnome_terminal_settings_backup.txt
 # ----------------------------------------------------------------
-cd Files
-sudo ./install.sh -y
+chmod +x Files/starship.sh
+sudo ./Files/starship.sh -y
 # ----------------------------------------------------------------
-read -p "Do You Want To Reboot Your System (yes or no) : " input08
-if [ $input08 = yes ] || [ $input08 = y ]
-then
-    echo "Rebooting in 10 Sec"
-    sleep 10
-    reboot
-else
-    echo "Reboot Later To Finish Setup"
-    sleep 2
-fi
+echo "reboot system for updates to settle"
 
+exit
