@@ -48,7 +48,7 @@ Mint Remix is a themed version of Linux Mint
 
 ![mintremix-03](https://github.com/abhishek-mallav/mint-remix/blob/main/Preview/taskbar.png)
 
-![mintremix-04](https://user-images.githubusercontent.com/76923011/195605388-fedeb6d0-5667-4910-90c9-9edc2e4380a5.png)
+![mintremix-04](https://github.com/abhishek-mallav/mint-remix/blob/main/Preview/desktop.png)
 
 ### Other Configs
 
@@ -238,7 +238,9 @@ chmod +x script.sh
 
 ###### [Github - abhishek-mallav/conky-remix](https://github.com/abhishek-mallav/conky-remix)
 
-![Screenshot from 2022-10-13 17-49-59](https://user-images.githubusercontent.com/76923011/195605468-3ce94010-83f7-4ce0-a339-18b98d786474.png)
+![Screenshot from 2022-10-13 17-49-59](https://github.com/abhishek-mallav/mint-remix/blob/main/Preview/desktop-light.png)
+
+![](https://github.com/abhishek-mallav/mint-remix/blob/main/Preview/desktop-dark.png)
 
 Terminal, Icons, Panel (taskbar) are scaled for better visual
 
