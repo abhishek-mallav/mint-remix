@@ -236,7 +236,7 @@ chmod +x script.sh
 
 ##### If you want to install and configure conky go to
 
-###### [Github - abhishek-mallav/conky-remix](https://github.com/abhishek-mallav/conky-remix)
+###### [Github - abhishek-mallav/conky-themes](https://github.com/abhishek-mallav/conky-themes)
 
 ![Screenshot from 2022-10-13 17-49-59](https://github.com/abhishek-mallav/mint-remix/blob/main/Preview/desktop-light.png)
 
