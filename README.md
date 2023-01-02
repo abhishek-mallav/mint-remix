@@ -12,7 +12,7 @@ Mint Remix is a themed version of Linux Mint
 
 * Icon Theme - **Colloid (light/dark)**
 
-* Cursot Theme - **Capitaine light**
+* Cursor Theme - **Capitaine light**
 
 * Task Bar Theme - **Adara Dark**
 
